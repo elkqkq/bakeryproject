@@ -6,27 +6,70 @@
     <title>Your Bakery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="output.css">
+    
 </head>
 <body class="bg-gray-100">
     
      <!-- Your Bakery Logo -->
        
-    <nav class="bg-white-300 p-4 flex items-center justify-between">
-        <div class="container flex justify-between items-center space-x-4 ">
-        <img src="logo.png" alt="Your Bakery Logo" class="h-10">
-            <ul class="flex space-x-4">
-                <li><a href="#" class="text-black">Home</a></li>
-                <li><a href="#about.html"class="text-black">About</a></li>
-                <li><a href="#menu.html"class="text-black">Digital Menu</a></li>
+     <header class="bg-white text-black p-4 flex flex-col items-center spac">
+        <img src="logo.png" alt="Your Bakery Logo" class="h-10 w-60">
+        <nav class="space-y-2 text-center font-mono">
+            <ul class="hidden md:flex space-x-36 mt-10">
+            <li><a href="#home" class="text-2xl py-2 px-4 text-black hover:underline transition duration-300">Home</a></li>
+            <li><a href="#about.html" class="text-2xl py-2 px-4  text-black hover:underline transition duration-300">About Us</a></li>           
+            <li><a href="#ourmenu.html" class="text-2xl py-2 px-4  text-black hover:underline transition duration-300">Our Menu</a></li>
             </ul>
-        </div>
-       
-    </nav>
+        </nav>
+        
+    </header>
     
-
+    
+    
+    <!-- Image Section -->
+    <section class="mt-30">
+        <img src="./bakery.png" alt="Bakery Image" class="w-full max-h-200 object-cover object-center">
+    </section>
     <!-- Main Content -->
-    <section class="container mx-auto mt-8 p-4">
-        <h2 class="text-2xl font-bold mb-4">Featured Products</h2>
+    <section id="home">
+        <div class="flex mt-8 bg-white">
+            <div class="w-1/2 h-96">
+              <img src="./homepage.jpg">
+            </div>
+            <div class="w-1/2 ml-9 text-2xl decoration-sky-950  mt-24">
+              
+              <p class="font-serif: Serif font">
+                WE CAN'T WAIT TO SEE YOU
+                <br> <br>
+                Open 6:30am to 7:30pm
+                We love crafting new, flavorful selections with the highest quality ingredients for you and your family!
+                <br> <br>
+                Experience Gayle’s Bakery & Rosticceria today — visit us in person, give us a call or place an online order.
+             </p>
+             <div class="flex flex-col items-center mt-8">
+                <!-- View Menus Button -->
+                <button class="bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition duration-300 mb-4">
+                    View Menus
+                </button>
+            
+                <!-- Order Online Button -->
+                <button class="bg-white text-black border border-black py-2 px-4 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Order Online
+                </button>
+            </div>
+            
+            
+            
+             
+            </div>
+          
+          </div>
+        </section>
+    <!--About Us-->
+
+    <!--menu-->
+    <section id="services" class="container mx-auto mt-8 p-8 bg-white rounded">
+        <h2 class="text-2xl font-bold mb-4 text-center">Our Menu</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Product 1 -->
             <div class="bg-white p-4 rounded-md shadow-md">
@@ -39,7 +82,7 @@
             <!-- Product 2 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Artisan Breads</h3>
-                <img src="" alt="">
+                <img src="./artisan.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Experience the goodness of freshly baked artisan breads, crafted with care.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -47,7 +90,7 @@
             <!-- Product 3 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Decadent Pastries</h3>
-                <img src="" alt="">
+                <img src="./decadent.jpg " class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Indulge in our decadent pastries that will satisfy your sweet cravings.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -55,31 +98,15 @@
             <!-- Product 4 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">French Baguettes</h3>
-                <img src="" alt="">
+                <img src="./french.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Savor the authentic taste of our French baguettes, freshly baked for a delightful experience.</p>
-                <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="bg-white p-4 rounded-md shadow-md">
-                <h3 class="text-xl font-semibold mb-2">Artisan Breads</h3>
-                <img src="" alt="">
-                <p class="text-gray-600">Experience the goodness of freshly baked artisan breads, crafted with care.</p>
-                <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="bg-white p-4 rounded-md shadow-md">
-                <h3 class="text-xl font-semibold mb-2">Decadent Pastries</h3>
-                <img src="" alt="">
-                <p class="text-gray-600">Indulge in our decadent pastries that will satisfy your sweet cravings.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
 
             <!-- Product 7 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Delightful Muffins</h3>
-                <img src="" alt="">
+                <img src="./muffins.jpg " class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Enjoy our delightful muffins, perfect for a quick and tasty treat.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -87,7 +114,7 @@
             <!-- Product 8 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Homemade Biscuits</h3>
-                <img src="" alt="">
+                <img src="./home cakes.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Savor the goodness of our homemade biscuits, baked with care and tradition.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -95,7 +122,7 @@
             <!-- Product 9 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Classic Bagels</h3>
-                <img src="" alt="">
+                <img src="./classic bagels.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Start your day with our classic bagels, freshly baked and delicious.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -103,7 +130,7 @@
             <!-- Product 10 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Buttery Croissants</h3>
-                <img src="" alt="">
+                <img src="./croissant.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Indulge in the flaky goodness of our buttery croissants, a true delight.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -111,7 +138,7 @@
             <!-- Product 11 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Fresh Doughnuts</h3>
-                <img src="" alt="">
+                <img src="./doughnuts.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Treat yourself to our fresh doughnuts, available in a variety of flavors.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
@@ -119,7 +146,7 @@
             <!-- Product 12 -->
             <div class="bg-white p-4 rounded-md shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Irresistible Cheesecakes</h3>
-                <img src="" alt="">
+                <img src="./cheese cake.jpg" class="w-full h-48 object-cover object-center mb-4">
                 <p class="text-gray-600">Satisfy your sweet tooth with our irresistible cheesecakes, made to perfection.</p>
                 <button class="mt-4 bg-black text-white px-4 py-2 rounded-full">Order Now</button>
             </div>
